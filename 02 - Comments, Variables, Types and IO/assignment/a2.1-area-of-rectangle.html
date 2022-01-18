@@ -3,7 +3,18 @@
 	<title>Welcome to CSCI-215!</title>
 </head>
 <body>
+<h2>Triangle Area Calculator</h2>
+<p>Click button below to begin calculating</p>
+<button onclick="myFunction()">Calculate</button>
+		
+<p id="area"></p>
 <script type="text/Javascript">
+function myFunction() {
+let base = prompt("Please enter the numerical value of the triangle base", )
+let height = prompt("Please ente the numerical value of the triangle height", )
+let area = (base*height)/2
+{document.getElementById("area").innerHTML ="The area of the triangle is: " + area;}
+}
 /*
 	Calculate the area of a triangle
 
